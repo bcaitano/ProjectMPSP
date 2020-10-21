@@ -1,0 +1,240 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#btn-chatbot {
+    width: 90px;
+    height: 90px;
+    background: #C00D00;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 2% 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 4px 5px 10px 3px rgba(0, 0, 0, 0.3);
+}
+
+#btn-chatbot span {
+    color: white;
+    font-weight: 100;
+}
+
+#btn-chatbot-hover {
+    width: 250px;
+    padding: 15px 15px;
+    border-radius: 30px;
+    background: #f0f0f0;
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.3);
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 2% 170px 2% 9%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #C00D00;
+    word-wrap: normal;
+    text-align: center;
+    line-height: 30px;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transition:  ease-in-out;
+    }
+    100% {
+        opacity: 1 ease-in;
+        transition-property: initial;
+        transition-timing-function: linear; 
+    }
+}
+
+#cx-dialog {
+    display: none;
+    flex-direction: column;
+    width: 25%;
+    height: 70vh;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 5% 3%;
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.2);
+    background: #f0f0f0;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+}
+
+.header-cx-dialog {
+    width: 100%;
+    height: 10vh;
+    background: #C00D00;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cx-fechar {
+    color: white;
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+.cx-avatar {
+    color: white;
+    margin-left: 35px;
+}
+
+.cx-avatar-nome {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.body-cx-dialog {
+    height: 50vh;
+    background: #f0f0f0;
+    overflow: auto;
+}
+
+.body-cx-dialog::-webkit-scrollbar {
+    width: 10px;
+    margin-top: 20px;
+}
+
+.body-cx-dialog::-webkit-scrollbar-thumb {
+    background: #C00D00;
+}
+
+.teste-msg {
+    width: 100%;
+    background: #f0f0f0;
+    float: left;
+}
+
+.teste-msg-left {
+    width: 70%;
+    float: left;
+    word-wrap: break-word;
+    padding: 15px;
+    margin: 25px 25px;
+    background: #fff;
+}
+
+.teste-msg-right {
+    width: 70%;
+    float: right;
+    word-wrap: break-word;
+    padding: 15px;
+    margin: 25px 25px;
+    background: #fff;
+}
+
+.teste-msg p {
+    font-size: 1.3em;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 30px;
+}
+
+.footer-cx-dialog {
+    height: 10vh;
+    background: #f0f0f0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cx-dialog-form {
+    width: 100%;
+}
+
+.cx-dialog-form-input {
+    width: 85%;
+    height: 55px;
+    float: left;
+}
+
+.dialog-form-input {
+    border-radius: 50px;
+    border: none;
+    background: white;
+    width: 80%;
+    height: 45px;
+    padding: 0 20px;
+    margin-left: 20px;
+    outline: none;
+}
+
+.cx-dialog-form-btn {
+    width: 10%;
+    height: 55px;
+    float: left;
+}
+
+.btn-enviar {
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-enviar img {
+    height: 40px;
+}
+
+
+@media screen and (max-width: 1600px) {
+    #cx-dialog {
+        width: 35%;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    #cx-dialog {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #cx-dialog {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #cx-dialog {
+        width: 65%;
+        height: 70vh;
+        margin: 5% 5%;
+    }
+    .body-cx-dialog {
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #btn-chatbot-hover {
+        left: 0;
+    }
+    #cx-dialog {
+        width: 90%;
+        height: 90vh;
+        margin: 5% 5%;
+    }
+    .body-cx-dialog {
+        height: 70vh;
+    }
+}
